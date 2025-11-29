@@ -5,12 +5,12 @@ import { Box, Container, Typography, Grid, Link } from '@mui/material'
 export function FooterLanding() {
 
     return (
-        <Box sx={{ backgroundColor: '#16213e', textAlign:'center', py: 2, color:'white'}}>
-            <Container maxWidth="lg">
-                <Typography>
+        <div className='bg-orange-600 text-white flex justify-center py-2'>
+            <div>
+                <span>
                     © 2024 Reeon Lance Tobia - Full Stack Developer
-                </Typography>
-            </Container>
-        </Box>
+                </span>
+            </div>
+        </div>
     )
 }
