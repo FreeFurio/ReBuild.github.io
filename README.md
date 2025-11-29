@@ -24,22 +24,25 @@ A modern, full-stack web application built with React, featuring a comprehensive
 - Server directory ready for backend implementation
 
 ## 📁 Project Structure
+
+```
 ReBuild/
-├── Client/ # Frontend React application
-│ ├── src/
-│ │ ├── components/ # Reusable components
-│ │ │ ├── common/ # Shared components
-│ │ │ │ ├── Header/ # Header components
-│ │ │ │ ├── Footer/ # Footer components
-│ │ │ │ └── Main/ # Main content components
-│ │ ├── UIs/ # UI library showcases
-│ │ │ ├── UIShowcase.jsx # Main showcase switcher
-│ │ │ ├── MaterialUI.jsx # Material-UI components
-│ │ │ ├── JoyUI.jsx # Joy UI components
-│ │ │ └── HeadlessUI.jsx # Headless UI components
-│ │ ├── SandboxDesigns/ # Design experimentation
-│ │ └── App.jsx # Main application component
-└── Server/ # Backend (to be implemented)
+├── Client/                 # Frontend React application
+│   ├── src/
+│   │   ├── components/     # Reusable components
+│   │   │   ├── common/     # Shared components
+│   │   │   │   ├── Header/ # Header components
+│   │   │   │   ├── Footer/ # Footer components
+│   │   │   │   └── Main/   # Main content components
+│   │   ├── UIs/           # UI library showcases
+│   │   │   ├── UIShowcase.jsx    # Main showcase switcher
+│   │   │   ├── MaterialUI.jsx    # Material-UI components
+│   │   │   ├── JoyUI.jsx         # Joy UI components
+│   │   │   └── HeadlessUI.jsx    # Headless UI components
+│   │   ├── SandboxDesigns/ # Design experimentation
+│   │   └── App.jsx        # Main application component
+└── Server/                # Backend (to be implemented)
+```
 
 ## 🎨 UI Philosophy
 
@@ -62,92 +65,85 @@ This project demonstrates a **hybrid UI approach**:
 ```bash
 git clone <repository-url>
 cd ReBuild
+```
 
 2. Install dependencies
+```bash
 cd Client
 npm install
+```
 
 3. Start the development server
+```bash
 npm run dev
+```
 
-4. Open your browser and navigate to http://localhost:5173
+4. Open your browser and navigate to `http://localhost:5173`
 
-🎯 Available Routes
-Main App: http://localhost:5173 - Main application
+## 🎯 Available Routes
 
-UI Showcase: http://localhost:5173#showcase - Interactive UI component demos
+- **Main App**: `http://localhost:5173` - Main application
+- **UI Showcase**: `http://localhost:5173#showcase` - Interactive UI component demos
+- **Design Sandbox**: `http://localhost:5173#design` - Design experimentation environment
 
-Design Sandbox: http://localhost:5173#design - Design experimentation environment
+## 🧩 Component Showcases
 
-🧩 Component Showcases
-Material-UI Showcase
+### Material-UI Showcase
 Comprehensive demonstration of Material-UI components including:
+- Forms & Inputs (TextField, Select, Checkbox, etc.)
+- Layout & Navigation (Stepper, Breadcrumbs, Accordion)
+- Data Display (Tables, Lists, Progress indicators)
+- Feedback (Alerts, Snackbars, Dialogs)
 
-Forms & Inputs (TextField, Select, Checkbox, etc.)
-
-Layout & Navigation (Stepper, Breadcrumbs, Accordion)
-
-Data Display (Tables, Lists, Progress indicators)
-
-Feedback (Alerts, Snackbars, Dialogs)
-
-Joy UI Showcase
+### Joy UI Showcase
 Modern component demonstrations with Joy UI's design system
 
-Headless UI Showcase
+### Headless UI Showcase
 Fully accessible, unstyled components for maximum customization
 
-🎨 Design System
+## 🎨 Design System
+
 The project uses a flexible design approach:
+- **Responsive Design**: Viewport units (vh, vw) for true responsiveness
+- **Component-Based Spacing**: Padding and margins over fixed dimensions
+- **Flexible Layouts**: Flexbox and CSS Grid for adaptive layouts
+- **Design Tokens**: Consistent spacing, colors, and typography
 
-Responsive Design: Viewport units (vh, vw) for true responsiveness
+## 🔧 Development Features
 
-Component-Based Spacing: Padding and margins over fixed dimensions
+- **Hot Module Replacement**: Instant updates during development
+- **ESLint Configuration**: Code quality and consistency
+- **Component Isolation**: Each UI library can be developed independently
+- **Design Sandbox**: Safe environment for design experimentation
 
-Flexible Layouts: Flexbox and CSS Grid for adaptive layouts
+## 📱 Responsive Design
 
-Design Tokens: Consistent spacing, colors, and typography
-
-🔧 Development Features
-Hot Module Replacement: Instant updates during development
-
-ESLint Configuration: Code quality and consistency
-
-Component Isolation: Each UI library can be developed independently
-
-Design Sandbox: Safe environment for design experimentation
-
-📱 Responsive Design
 The application is built with a mobile-first approach:
+- Flexible viewport-based sizing
+- Responsive navigation and layouts
+- Adaptive component behavior across screen sizes
 
-Flexible viewport-based sizing
+## 🤝 Contributing
 
-Responsive navigation and layouts
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Adaptive component behavior across screen sizes
+## 📄 License
 
-🤝 Contributing
-Fork the repository
-
-Create a feature branch (git checkout -b feature/amazing-feature)
-
-Commit your changes (git commit -m 'Add amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🚀 Future Enhancements
- Backend API integration
- Authentication system
- Database integration
- Advanced component library
- Theme customization system
- Component documentation generator
-Built with ❤️ using modern React and a multi-UI library approach
+## 🚀 Future Enhancements
 
+- [ ] Backend API integration
+- [ ] Authentication system
+- [ ] Database integration
+- [ ] Advanced component library
+- [ ] Theme customization system
+- [ ] Component documentation generator
 
-This README provides a comprehensive overview of your project, highlighting the unique multi-UI library approach and the design sandbox concept. You can save this as `README.md` in your root directory.
+---
+
+**Built with ❤️ using modern React and a multi-UI library approach**
