@@ -4,52 +4,49 @@ import { useState } from 'react'
 export function Register() {
 
   return (
-    <div className='bg-red-200 flex justify-center items-center w-full min-h-full'>
+    <div className='bg-orange-200 flex justify-center items-center w-full min-h-full'>
 
       {/*Card*/} {/*HeadlessUI Card Component*/} {/*to be applied*/} 
-      <div className='bg-blue-200 w-[30vw] flex justify-center gap-16 items-center flex-col py-16 my-11'>
+      <div className='bg-white text-black w-[25vw] rounded-2xl shadow-2xl flex justify-center gap-10 items-center flex-col py-14'> 
 
         {/*Welcome*/}
-        <div className='bg-red-200'>
-          <div>Welcome</div>
+        <div className='flex flex-col items-center gap-3'>
+          <span className='text-5xl font-["Righteous"]'>Register</span>
+          <span className='font-["Nunito"]'>BE ONE OF US</span>
         </div>
 
-        <div className='bg-red-200 flex flex-col gap-10 w-[20vw]  justify-center items-center py-6'>
+        <div className=' flex flex-col gap-10 w-[20vw]  justify-center items-center'>
           
           {/*Inputs*/} {/*MUI Inputs Components*/}
-          <div className='bg-blue-200 flex flex-col  w-[15vw]  gap-8'>
+          <div className='flex flex-col  w-[18vw]  gap-8'>
             <div className='flex flex-col'>
-              <span>First Name:</span>
-              <input type="text" placeholder='Enter First Name' />
+              <input type="text" placeholder='First Name' className='py-2 px-3 bg-white rounded-full focus:ring-blue-500 focus:ring-2 focus:outline-none shadow-inner border border-gray-300' />
             </div>
             <div className='flex flex-col'>
-              <span>Last Name:</span>
-              <input type="text" placeholder='Enter Last Name' />
+              <input type="text" placeholder='Last Name' className='py-2 px-3 bg-white rounded-full focus:ring-blue-500 focus:ring-2 focus:outline-none shadow-inner border border-gray-300'/>
             </div>
             <div className='flex flex-col'>
-              <span>Email:</span>
-              <input type="text" placeholder='Enter Email' />
+              <input type="text" placeholder='Email' className='py-2 px-3 bg-white rounded-full focus:ring-blue-500 focus:ring-2 focus:outline-none shadow-inner border border-gray-300' />
             </div>
             <div className='flex flex-col'>
-              <span>Password:</span>
-              <input type="text" placeholder='Enter Password' />
+              <input type="text" placeholder='Password' className='py-2 px-3 bg-white rounded-full focus:ring-blue-500 focus:ring-2 focus:outline-none shadow-inner border border-gray-300'/>
             </div>
             <div className='flex flex-col'>
-              <span>Re-type Password</span>
-              <input type="text" placeholder='Re-enter you password' />
+              <input type="text" placeholder='Re-enter your password' className='py-2 px-3 bg-white rounded-full focus:ring-blue-500 focus:ring-2 focus:outline-none shadow-inner border border-gray-300'/>
             </div>
           </div>
 
           {/*Submit*/}
-          <button>
+          <button className='bg-orange-500 px-6 py-2 rounded-full text-white shadow-lg hover:bg-orange-600 cursor-pointer'>
             Submit
           </button>
 
         </div>
 
         {/*Link for Login*/}
-        <div>
-          Link for Login
+        <div className='flex gap-2'>
+          <p>Already have an Account?</p>
+          <button className='cursor-pointer hover:scale-110 transition-transform'>Login</button>
           </div>
 
       </div>
