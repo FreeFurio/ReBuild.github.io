@@ -34,25 +34,14 @@ export function Inputs() {
                     {/* Background */}
                     <div className="mb-3">
                         <h4 className="text-xs font-medium text-gray-600 mb-1">Background</h4>
-                        <div className="grid grid-cols-3 gap-1">
+                        <div className="grid grid-cols-2 gap-1">
                             <button 
                                 onClick={() => toggleClass('bg-white')}
                                 className={`p-2 text-xs border rounded ${cssClasses.includes('bg-white') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                bg-white
+                                {cssClasses.includes('bg-white') ? 'ON' : 'OFF'}
                             </button>
-                            <button 
-                                onClick={() => toggleClass('bg-gray-50')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('bg-gray-50') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                bg-gray-50
-                            </button>
-                            <button 
-                                onClick={() => toggleClass('bg-transparent')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('bg-transparent') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                bg-transparent
-                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">bg-white</span>
                         </div>
                     </div>
                     
@@ -109,50 +98,28 @@ export function Inputs() {
                     {/* Border */}
                     <div className="mb-3">
                         <h4 className="text-xs font-medium text-gray-600 mb-1">Border</h4>
-                        <div className="grid grid-cols-3 gap-1">
+                        <div className="grid grid-cols-2 gap-1">
                             <button 
                                 onClick={() => toggleClass('border')}
                                 className={`p-2 text-xs border rounded ${cssClasses.includes('border') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                border
+                                {cssClasses.includes('border') ? 'ON' : 'OFF'}
                             </button>
-                            <button 
-                                onClick={() => toggleClass('border-2')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('border-2') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                border-2
-                            </button>
-                            <button 
-                                onClick={() => toggleClass('border-gray-300')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('border-gray-300') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                border-gray-300
-                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">border</span>
                         </div>
                     </div>
                     
                     {/* Border Radius */}
                     <div className="mb-3">
                         <h4 className="text-xs font-medium text-gray-600 mb-1">Border Radius</h4>
-                        <div className="grid grid-cols-3 gap-1">
+                        <div className="grid grid-cols-2 gap-1">
                             <button 
                                 onClick={() => toggleClass('rounded-md')}
                                 className={`p-2 text-xs border rounded ${cssClasses.includes('rounded-md') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                rounded-md
+                                {cssClasses.includes('rounded-md') ? 'ON' : 'OFF'}
                             </button>
-                            <button 
-                                onClick={() => toggleClass('rounded-full')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('rounded-full') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                rounded-full
-                            </button>
-                            <button 
-                                onClick={() => toggleClass('rounded-none')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('rounded-none') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                rounded-none
-                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">rounded-md</span>
                         </div>
                     </div>
                     
@@ -181,53 +148,95 @@ export function Inputs() {
                         </div>
                     </div>
                     
-                    {/* Shadows */}
+                    {/* Shadow */}
                     <div className="mb-3">
-                        <h4 className="text-xs font-medium text-gray-600 mb-1">Shadows</h4>
-                        <div className="grid grid-cols-3 gap-1">
+                        <h4 className="text-xs font-medium text-gray-600 mb-1">Shadow</h4>
+                        <div className="grid grid-cols-2 gap-1">
                             <button 
                                 onClick={() => toggleClass('shadow-lg')}
                                 className={`p-2 text-xs border rounded ${cssClasses.includes('shadow-lg') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                shadow-lg
+                                {cssClasses.includes('shadow-lg') ? 'ON' : 'OFF'}
                             </button>
-                            <button 
-                                onClick={() => toggleClass('inset-shadow')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('inset-shadow') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                inset-shadow
-                            </button>
-                            <button 
-                                onClick={() => toggleClass('shadow-sm')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('shadow-sm') ? 'bg-blue-500 text-white' : 'bg-white'}`}
-                            >
-                                shadow-sm
-                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">shadow-lg</span>
                         </div>
                     </div>
                     
-                    {/* Focus States */}
+                    {/* Focus State */}
                     <div className="mb-3">
-                        <h4 className="text-xs font-medium text-gray-600 mb-1">Focus States</h4>
-                        <div className="grid grid-cols-3 gap-1">
+                        <h4 className="text-xs font-medium text-gray-600 mb-1">Focus State</h4>
+                        <div className="grid grid-cols-2 gap-1">
                             <button 
                                 onClick={() => toggleClass('focus:ring-2')}
                                 className={`p-2 text-xs border rounded ${cssClasses.includes('focus:ring-2') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                focus:ring-2
+                                {cssClasses.includes('focus:ring-2') ? 'ON' : 'OFF'}
+                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">focus:ring-2</span>
+                        </div>
+                    </div>
+                    
+                    {/* Overflow */}
+                    <div className="mb-3">
+                        <h4 className="text-xs font-medium text-gray-600 mb-1">Overflow</h4>
+                        <div className="grid grid-cols-3 gap-1">
+                            <button 
+                                onClick={() => toggleClass('overflow-hidden')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('overflow-hidden') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                            >
+                                overflow-hidden
                             </button>
                             <button 
-                                onClick={() => toggleClass('focus:outline-none')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('focus:outline-none') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                                onClick={() => toggleClass('overflow-scroll')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('overflow-scroll') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                focus:outline-none
+                                overflow-scroll
                             </button>
                             <button 
-                                onClick={() => toggleClass('focus:border-blue-500')}
-                                className={`p-2 text-xs border rounded ${cssClasses.includes('focus:border-blue-500') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                                onClick={() => toggleClass('overflow-auto')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('overflow-auto') ? 'bg-blue-500 text-white' : 'bg-white'}`}
                             >
-                                focus:border-blue-500
+                                overflow-auto
                             </button>
+                        </div>
+                    </div>
+                    
+                    {/* Hover Effects */}
+                    <div className="mb-3">
+                        <h4 className="text-xs font-medium text-gray-600 mb-1">Hover Effects</h4>
+                        <div className="grid grid-cols-3 gap-1">
+                            <button 
+                                onClick={() => toggleClass('hover:bg-gray-50')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('hover:bg-gray-50') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                            >
+                                hover:bg-gray-50
+                            </button>
+                            <button 
+                                onClick={() => toggleClass('hover:border-blue-400')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('hover:border-blue-400') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                            >
+                                hover:border-blue-400
+                            </button>
+                            <button 
+                                onClick={() => toggleClass('hover:shadow-md')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('hover:shadow-md') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                            >
+                                hover:shadow-md
+                            </button>
+                        </div>
+                    </div>
+                    
+                    {/* Outline */}
+                    <div className="mb-3">
+                        <h4 className="text-xs font-medium text-gray-600 mb-1">Outline</h4>
+                        <div className="grid grid-cols-2 gap-1">
+                            <button 
+                                onClick={() => toggleClass('outline-none')}
+                                className={`p-2 text-xs border rounded ${cssClasses.includes('outline-none') ? 'bg-blue-500 text-white' : 'bg-white'}`}
+                            >
+                                {cssClasses.includes('outline-none') ? 'ON' : 'OFF'}
+                            </button>
+                            <span className="text-xs text-gray-500 flex items-center">outline-none</span>
                         </div>
                     </div>
                 </div>
