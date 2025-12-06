@@ -19,46 +19,59 @@ export function Register({setCurrentPage}) {
 
           {/*Inputs*/}
           <form className='flex flex-col  w-[18vw]  gap-6 mt-5' onSubmit={(e) => e.preventDefault()}> 
-            <div className='flex flex-col'>
-              <input type="text" placeholder='First Name' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+            <div className='relative'>
+              <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+              <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>First Name</label>
             </div>
-            <div className='flex flex-col'>
-              <input type="text" placeholder='Last Name' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+            <div className='relative'>
+              <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+              <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>
+                Last Name
+              </label>
             </div>
             <div className='flex flex-col gap-3'>
-              <div className='flex flex-col'>
-                <input type="text" placeholder='Email' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
-                <div className='mt-3 flex gap-1 items-center '>
+              <div className='relative'>
+                <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+                <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>
+                  Email
+                </label>
+                <div className='mt-3 flex gap-1 items-center pb-2'>
                   <MdOutlineRadioButtonUnchecked />
-                  <span className='text-gray-400 text-sm'>Validation</span>
+                  <span className='text-gray-400 text-sm'>Valid Email</span>
                 </div>
               </div>
-              <div className='flex flex-col'>
-                <input type="text" placeholder='Password' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+              <div className='relative'>
+                <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+                <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>
+                  Password
+                </label>
                 <div className='mt-3 flex gap-1 items-center'>
                   <MdOutlineRadioButtonUnchecked />
-                  <span className='text-gray-400 text-sm'>Validation</span>
+                  <span className='text-gray-400 text-sm'>Requirements:</span>
                 </div>
                 <div className='ml-5'>
                   <div className='mt-3 flex gap-1 items-center'>
                     <MdOutlineRadioButtonUnchecked className='w-3 h-3' />
-                    <span className='text-gray-400 text-xs'>Validation</span>
+                    <span className='text-gray-400 text-xs'>8+ Characters</span>
                   </div>
                   <div className='mt-3 flex gap-1 items-center'>
                     <MdOutlineRadioButtonUnchecked className='w-3 h-3' />
-                    <span className='text-gray-400 text-xs'>Validation</span>
+                    <span className='text-gray-400 text-xs'>1 Upper case letter</span>
                   </div>
-                  <div className='mt-3 flex gap-1 items-center'>
+                  <div className='mt-3 flex gap-1 items-center pb-2'>
                     <MdOutlineRadioButtonUnchecked className='w-3 h-3' />
-                    <span className='text-gray-400 text-xs'>Validation</span>
+                    <span className='text-gray-400 text-xs'>1 Number</span>
                   </div>
                 </div>
               </div>
-              <div className='flex flex-col'>
-                <input type="text" placeholder='Re-enter your password' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+              <div className='relative'>
+                <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+                <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>
+                  Re-type Password
+                </label>
                 <div className='mt-3 flex gap-1 items-center'>
                   <MdOutlineRadioButtonUnchecked />
-                  <span className='text-gray-400 text-sm'>Validation</span>
+                  <span className='text-gray-400 text-sm'>Password Match</span>
                 </div>
               </div>
             </div>

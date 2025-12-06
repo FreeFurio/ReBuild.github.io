@@ -8,7 +8,7 @@ export function FooterLanding() {
         <div className='bg-orange-600 text-white flex justify-center py-2'>
             <div>
                 <span>
-                    © 2024 Reeon Lance Tobia - Full Stack Developer
+                    © 2025 Reeon Lance Tobia - Full Stack Developer
                 </span>
             </div>
         </div>

@@ -13,17 +13,18 @@ export function ForgotPassword({setCurrentPage}) {
                 <div className='flex flex-col items-center gap-3'>
                     <span className='text-5xl font-["Righteous"]'>Forgot Password</span>
                     <span className='font-["Nunito"]'>"but do you remember one of us?"</span>
+                    <span className='text-xs font-["Nunito"]'>Enter Email to Send Password Reset</span>
                 </div>
 
                 <div className=' flex flex-col gap-10 w-[20vw]  justify-center items-center'>
 
                     {/*Inputs*/}
                     <form className='flex flex-col  w-[18vw]  gap-6 mt-5' onSubmit={(e) => e.preventDefault()}>
-                        <div className='flex flex-col'>
-                            <input type="text" placeholder='Email' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
-                        </div>
-                        <div className='flex flex-col'>
-                            <input type="text" placeholder='Password' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+                        <div className='relative'>
+                            <input type="text" placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full'/>
+                            <label htmlFor="email" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:left-2 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 peer-[:not(:placeholder-shown)]:left-2'>
+                                Email
+                            </label>
                         </div>
 
                         {/*Submit*/}
