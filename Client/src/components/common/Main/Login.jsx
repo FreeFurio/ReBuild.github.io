@@ -20,13 +20,15 @@ export function Login({ setCurrentPage }) {
                     {/*Inputs*/}
                     <form className='flex flex-col  w-[18vw]  gap-6 mt-5' onSubmit={(e) => e.preventDefault()}>
                         <div className='relative'>
-                            <input type="email"  id="email" placeholder=" " className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
-                            <label htmlFor="email"className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:-top-2 peer-focus:left-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500 bg-white px-1'>
+                            <input type="email" id="email" placeholder=" " className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+                            <label htmlFor="email" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:-top-2 peer-focus:left-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500'>
                                 Email
                             </label>
                         </div>
-                        <div className='flex flex-col'>
-                            <input type="text" placeholder='Password' className='py-2 px-3 bg-white custom_input_line focus:outline-none' />
+                        <div className='relative'>
+                            <input type="text" id='password' placeholder=' ' className='py-2 px-3 bg-white custom_input_line focus:outline-none peer w-full' />
+                            <label htmlFor="text" className='absolute left-3 top-2 text-gray-500 pointer-events-none transition-all duration-200 peer-focus:-top-2 peer-focus:left-2 peer-focus:text-xs peer-focus:text-orange-500 peer-[:not(:placeholder-shown)]:-top-2 peer-[:not(:placeholder-shown)]:left-2 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-orange-500'>
+                                Password</label>
                         </div>
 
                         {/*Submit*/}
